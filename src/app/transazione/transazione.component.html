@@ -2,7 +2,7 @@
     <h4>{{ transazione.business }}</h4>
     <h6>{{ transazione.name }}</h6>
     <h6>Account: {{ transazione.account }}</h6>
-    <h6>{{ transazione.date }}</h6>
+    <h6>Date: {{ transazione.date * 1000 | date: 'MMM dd, yyyy' }}</h6>
     <h6>Type: {{ transazione.type }}</h6>
     <h6>Amount: ${{ transazione.amount }}</h6>
 </div>
