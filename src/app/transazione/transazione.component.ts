@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Transazione } from '../models/transazione';
 
 @Component({
   selector: 'app-transazione',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './transazione.component.css'
 })
 export class TransazioneComponent {
-
+  @Input()
+  transazione?: Transazione;
 }

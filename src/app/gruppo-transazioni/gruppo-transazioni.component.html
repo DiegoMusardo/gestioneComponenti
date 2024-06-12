@@ -1,5 +1,3 @@
-<div style="padding: 1rem; display: flex; gap: 1rem;">
-    <p>gruppo-transazioni works!</p>
-    <p>gruppo-transazioni works!</p>
-    <p>gruppo-transazioni works!</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; height: 100%;">
+    <app-transazione class="card" style="width: 26rem; height: 13rem; background-color: azure;" *ngFor="let t of transazioni" [transazione]="t"></app-transazione>
 </div>

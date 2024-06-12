@@ -1,1 +1,8 @@
-<p>transazione works!</p>
+<div *ngIf="transazione" style="display: flex; flex-direction: column; padding: 1rem;">
+    <h4>{{ transazione.business }}</h4>
+    <h6>{{ transazione.name }}</h6>
+    <h6>Account: {{ transazione.account }}</h6>
+    <h6>{{ transazione.date }}</h6>
+    <h6>Type: {{ transazione.type }}</h6>
+    <h6>Amount: ${{ transazione.amount }}</h6>
+</div>
